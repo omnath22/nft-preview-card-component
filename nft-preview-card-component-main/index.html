@@ -84,13 +84,53 @@
     .profile-container span{
       color: hsl(215, 51%, 70%);
     }
+    #profile-name{
+      color:white;
+    }
+    #profile-name:hover{
+      color:cyan;
+      cursor: pointer;
+    }
+    #main-img{
+      position: relative;
+      width: 100%; /* Set desired width */
+      height: 260px; /* Set desired height */
+      background: url('./images/image-equilibrium.jpg') no-repeat center/cover;
+      transition: background-color 0.3s ease;
+      border-radius: 10px;
+    }
+    #main-img:hover {
+      background: cyan; /* Changes the background to cyan */
+      
+    }
+    #eye {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px; /* Adjust size as needed */
+      height: 100px;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    #main-img:hover #eye{
+      opacity: 1;
+    }
+   
 
   </style>
 </head>
 <body>
 <div class="container">
   <div class="card">
-    <img src="./images/image-equilibrium.jpg" alt="">
+    <div id="main-img">
+    
+ 
+      <img src="./images/icon-view.svg" id="eye" alt="">
+   
+    
+  </div>
       <h3>Equilibrium #3429</h3>
       <p id="sub-title">Our Equilibrium collection promotes balance and calm.</p>
 
@@ -112,8 +152,7 @@
       <div class="profile">
     <img src="./images/image-avatar.png" alt="">
   </div>
-    <span>Creation of &nbsp;</span> Jules Wyvern
-  
+    <span>Creation of &nbsp;</span><span id="profile-name"> Jules Wyvern </span>
   
   </div>
 
