@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color: hsl(217, 54%, 11%);
+      font-family: Outfit;
+    }
+    .container{
+      margin-top: 100px;
+
+    }
+    .card{
+      margin:auto;
+      width:260px;
+      padding:20px;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 15px;
+    }
+    .card img{
+      width:100%;
+      border-radius: 10px;
+    }
+    h3{
+      color:white;
+    }
+    #sub-title{
+      color:hsl(215, 51%, 70%);
+      line-height: 25px;
+    }
+    #balance-container{
+      display: flex;
+      justify-content: space-between;
+     
+    }
+    #balance, #days-left{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #balance img{
+      width:11px;
+      margin-right:10px;
+    }
+    #days-left img{
+      width:18px;
+      margin-right:10px;
+    }
+    #balance{
+      color:hsl(178, 100%, 50%);
+    }
+    #days-left{
+      color:hsl(215, 51%, 70%);
+    }
+
+    .divider{
+      margin-top: 15px;
+      border-bottom:1px solid hsl(215, 51%, 70%);
+    }
+
+    .profile{
+      width:35px;
+      height:35px;
+      border:1px solid white;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    .profile-container{
+      color:white;
+      display:flex;
+      align-items: center;
+      margin-top:15px;
+    }
+    .profile-container span{
+      color: hsl(215, 51%, 70%);
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <img src="./images/image-equilibrium.jpg" alt="">
+      <h3>Equilibrium #3429</h3>
+      <p id="sub-title">Our Equilibrium collection promotes balance and calm.</p>
+
+<div id="balance-container">
+  <div id="balance">
+    <img src="./images/icon-ethereum.svg" alt="">
+    0.041 ETH
+  </div>
+  <div id="days-left">
+    <img src="./images/icon-clock.svg" alt="">
+    3 days left
+  </div>
+</div>
+  <div class="divider">
+    
+  </div>
+  
+  <div class="profile-container">
+      <div class="profile">
+    <img src="./images/image-avatar.png" alt="">
+  </div>
+    <span>Creation of &nbsp;</span> Jules Wyvern
+  
+  
+  </div>
+
+  
+  </div>
+</div>
+
+
+
+</body>
+</html>
